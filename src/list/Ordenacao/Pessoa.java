@@ -12,9 +12,21 @@ public class Pessoa implements Comparable<Pessoa> {
         this.altura = altura;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
     @Override
-    public int compareTo(Pessoa o) {
-        return 0;
+    public int compareTo(Pessoa p) {
+        return Integer.compare(idade, p.getIdade());
     }
 
     @Override

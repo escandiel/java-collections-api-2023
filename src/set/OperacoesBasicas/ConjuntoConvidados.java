@@ -25,4 +25,12 @@ public class ConjuntoConvidados {
             convidadoSet.remove(convidadoParaRemover);
         }
     }
+
+    public int contarConvidados() {
+        return convidadoSet.size();
+    }
+
+    public void exibirConvidados() {
+        System.out.println(convidadoSet);
+    }
 }

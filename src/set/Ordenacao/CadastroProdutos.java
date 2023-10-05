@@ -27,4 +27,14 @@ public class CadastroProdutos {
         produtoSet.addAll(produtoSet);
         return produtosPorPreco;
     }
+
+    public static void main(String[] args){
+        CadastroProdutos cadastroProdutos = new CadastroProdutos();
+        cadastroProdutos.adicionarProduto(1l,"Nike Dunk", 200, 5);
+        cadastroProdutos.adicionarProduto(2l,"Nike Air Jordan", 200, 5);
+        cadastroProdutos.adicionarProduto(1l,"Nike Dunk", 200, 5);
+        cadastroProdutos.adicionarProduto(9l,"Adidas Yeezy", 200, 5);
+
+        System.out.println(cadastroProdutos.produtoSet);
+    }
 }

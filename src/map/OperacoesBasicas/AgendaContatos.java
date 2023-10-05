@@ -19,4 +19,8 @@ public class AgendaContatos {
             agendaContatoMap.remove(nome);
         }
     }
+
+    public void exibirContatos() {
+        System.out.println(agendaContatoMap);
+    }
 }

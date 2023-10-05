@@ -36,5 +36,7 @@ public class CadastroProdutos {
         cadastroProdutos.adicionarProduto(9l,"Adidas Yeezy", 200, 5);
 
         System.out.println(cadastroProdutos.produtoSet);
+        System.out.println(cadastroProdutos.exibirProdutosPorNome());
+        System.out.println(cadastroProdutos.exibirProdutosPorPreco());
     }
 }

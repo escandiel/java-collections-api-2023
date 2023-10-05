@@ -31,4 +31,18 @@ public class AgendaContatos {
         }
         return numeroPorNome;
     }
+
+    public static void main(String[] args) {
+        AgendaContatos agendaContatos = new AgendaContatos();
+        agendaContatos.exibirContatos();
+        agendaContatos.adicionarContato("Marcela Mozaica", 99999);
+        agendaContatos.adicionarContato("Marcela Mozaica2", 99956);
+        agendaContatos.adicionarContato("Marcela Mozaica3", 9969);
+        agendaContatos.adicionarContato("Marcela Mozaica", 9995);
+        agendaContatos.exibirContatos();
+        agendaContatos.removerContato("Marcela Mozaica3");
+        agendaContatos.exibirContatos();
+        System.out.println("O numero é: " + agendaContatos.pesquisarPorNome("Marcela Mozaica2"));
+
+    }
 }

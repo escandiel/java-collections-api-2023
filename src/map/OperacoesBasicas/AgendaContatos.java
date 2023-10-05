@@ -10,4 +10,13 @@ public class AgendaContatos {
     public AgendaContatos() {
         this.agendaContatoMap = new HashMap<>();
     }
+    public void adicionarContato(String nome, Integer telefone) {
+        agendaContatoMap.put(nome, telefone);
+    }
+
+    public void removerContato(String nome) {
+        if(agendaContatoMap.isEmpty()) {
+            agendaContatoMap.remove(nome);
+        }
+    }
 }
